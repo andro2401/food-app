@@ -1,4 +1,4 @@
-import './globals.css';
+import './globals.scss';
 import Header from "@/components/Header";
 
 export const metadata = {
@@ -9,7 +9,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>
+      <body className="page">
         <div className="header-background">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
             <defs>

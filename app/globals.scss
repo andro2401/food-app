@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&family=Montserrat:wght@400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&family=Montserrat:wght@400;700&display=swap');
+
 * {
   padding: 0;
   margin: 0;
@@ -6,22 +7,21 @@
 }
 
 html {
-  font-family: "Quicksand", sans-serif;
+  font-family: 'Quicksand', sans-serif;
 }
 
 body {
   margin: 0;
   font-size: 16px;
   background: radial-gradient(#282c34, #282c34);
+  &.page{
+    max-width: 2560px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
 }
-body.page {
-  max-width: 2560px;
-  width: 100%;
-  margin: 0 auto;
-  padding: 0 15px;
-}
-
-ul {
+ul{
   list-style: none;
 }
 
@@ -58,7 +58,7 @@ svg {
   -webkit-text-fill-color: transparent;
   background-size: cover;
   background-position: center;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .not-found p,
@@ -67,10 +67,7 @@ svg {
   font-weight: 500;
   color: #ddd8d8;
 }
-
-a {
+a{
   text-decoration: none;
-  transition: all 0.3s ease-in-out;
+  transition: all .3s ease-in-out;
 }
-
-/*# sourceMappingURL=globals.css.map */

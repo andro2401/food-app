@@ -4,7 +4,7 @@ const SingleMeal = ({params}) => {
     return (
         <>
             <h1>Single meal page</h1>
-            <p>{params.slug}</p>
+            <p>{params.mealSlug}</p>
         </>
     );
 };
