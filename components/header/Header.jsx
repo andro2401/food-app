@@ -2,6 +2,7 @@ import React from 'react';
 import Link from "next/link";
 import logoImg from '@/assets/logo.png';
 import Image from "next/image";
+import NavLink from "@/components/header/NavLink";
 import './header.scss';
 const Header = () => {
     return (
@@ -26,7 +27,7 @@ const Header = () => {
                     ></path>
                 </svg>
             </div>
-            <header>
+            <header className="main-header">
                 <Link href="/" className="mainLogo">
                     <Image src={logoImg}
                            alt="Plate of food on it"
@@ -37,13 +38,10 @@ const Header = () => {
                 <nav className="headerNav">
                     <ul>
                         <li>
-                            <Link href="/community">Community</Link>
+                            <NavLink href="/meals">Meals</NavLink>
                         </li>
                         <li>
-                            <Link href="/meals">Meals</Link>
-                        </li>
-                        <li>
-                            <Link href="/meals/share">Share</Link>
+                            <NavLink href="/community">Community</NavLink>
                         </li>
                     </ul>
                 </nav>
